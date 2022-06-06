@@ -2,7 +2,8 @@
 
 :root {
   --font-base: "DM Sans", sans-serif;
-
+  --nav_bg_color: rgba(255,255,255,0.2);
+  --bordr-color:rgba(255,255,255,0.12);
   --primary-color: #edf2f8;
   --secondary-color: #313bac;
   --black-color: #030303;
