@@ -1,11 +1,12 @@
 
 import './Header.scss'
 
-import React from 'react'
-
 const Header = () => {
+  
   return (
-    <div>Header</div>
+    <div>
+        <h1>Header</h1>
+    </div>
   )
 }
 
