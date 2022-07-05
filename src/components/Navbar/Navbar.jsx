@@ -16,10 +16,10 @@ const [toggle, setToggle] = useState(false)
       </div>
 
       <ul className='app__navbar-links'>
-        {['Home','About','Contact', 'Projects','Skill', 'Work'].map((item) =>{
+        {['Home','About','Contact', 'Projects','Skill','Testimonial', 'Work'].map((item, index) =>{
           return <li className='app__flex p-text' key={`link-${item}`}>
             <div/>
-            <a href={`#${item}`}>{item}</a>
+            <a href={`#${item}`} onClick={ ()=> setToggle(false)} >{item}</a>
           </li>
         })}
       </ul>
@@ -32,10 +32,10 @@ const [toggle, setToggle] = useState(false)
               transition={{duration:0.85,ease:'easeInOut'}}>
 
               <HiX onClick={() => setToggle(false)} />
-              {['Home','About','Contact', 'Projects','Skill', 'Work'].map((item) =>{
+              {['Home','About','Contact', 'Projects','Skill', 'Testimonial', 'Work'].map((item, index) =>{
                   return <ul>
-                    <li key={item}>
-                      <a href={`#${item}`}>{item}</a>
+                    <li key={index}>
+                      <a onClick={()=> setToggle(false)} href={`#${item}`}>{item}</a>
                     </li>
                   </ul>
                 })}

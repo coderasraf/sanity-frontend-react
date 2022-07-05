@@ -1,6 +1,7 @@
 
 import './Header.scss'
 import {motion} from 'framer-motion'
+import {appWrapper} from '../../wrapper'
 import {images} from '../../constants'
 import './Header.scss'
 
@@ -76,4 +77,4 @@ const scaleVariants = {
   )
 }
 
-export default Header
+export default appWrapper(Header, 'Home')

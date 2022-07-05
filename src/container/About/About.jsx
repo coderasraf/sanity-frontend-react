@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { motion } from 'framer-motion'
 import './About.scss'
+import { appWrapper } from '../../wrapper'
 import {images} from '../../constants'
 
 
@@ -40,4 +41,4 @@ const About = () => {
   )
 }
 
-export default About
+export default appWrapper(About, 'About')
